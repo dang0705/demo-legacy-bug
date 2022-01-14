@@ -32,7 +32,6 @@
     </div>
   </ui-input-field>
 </template>
-
 <script>
 import formItemMixin from 'controlMixins/form-item';
 import 'balm-ui/components/picker/picker.css';
