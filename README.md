@@ -1,2 +1,5 @@
-# demo-legacy-bug
-demo
+# Vue 2 + Vite
+
+## Recommended IDE Setup
+
+- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
