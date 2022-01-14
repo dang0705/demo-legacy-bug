@@ -14,7 +14,7 @@
         :disabled="disabled"
         :attrs="{ readonly }"
       />
-      <div v-else @click.capture="onClick">
+      <div v-else>
         <ui-rangepicker
           v-model="value"
           :config="pickerConfig"
@@ -35,11 +35,9 @@
 
 <script>
 import formItemMixin from 'controlMixins/form-item';
-import fixAutoChange from 'controlMixins/fix-auto-change';
 import 'balm-ui/components/picker/picker.css';
 import 'balm-ui/components/datepicker/datepicker.css';
 import 'balm-ui/components/rangepicker/rangepicker.css';
-import 'asyncCompStyle/_rangepicker.scss';
 import lang from 'flatpickr/dist/l10n/zh';
 const datePickerBase = {
   locale: lang.zh,
@@ -48,7 +46,7 @@ const datePickerBase = {
 };
 export default {
   name: 'InputRangepicker',
-  mixins: [formItemMixin, fixAutoChange],
+  mixins: [formItemMixin],
   data() {
     const {
       config: { dateOptions = {} }

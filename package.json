@@ -1,0 +1,26 @@
+{
+  "name": "moderator",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build-default": "vite build --mode build-default",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "balm-ui": "^8.47.0",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^1.6.4",
+    "core-js": "^3.18.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-css-porter": "^1.0.2",
+    "rollup-plugin-delete": "^2.0.0",
+    "sass": "^1.43.2",
+    "vite": "^2.5.10",
+    "vite-plugin-html": "^2.1.1",
+    "vite-plugin-vue2": "^1.9.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

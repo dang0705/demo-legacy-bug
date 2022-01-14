@@ -10,7 +10,7 @@
       <div v-if="config.showonly" class="readonly-field">
         {{ selectedValue }}
       </div>
-      <div v-else @click.capture="onClick">
+      <div v-else>
         <ui-select
           v-model="value"
           :options="options"
@@ -34,9 +34,8 @@
 <script>
 import formItemMixin from 'controlMixins/form-item';
 import optionsMixin from 'controlMixins/options';
-import fixAutoChange from 'controlMixins/fix-auto-change';
 export default {
   name: 'InputSelect',
-  mixins: [formItemMixin, optionsMixin, fixAutoChange]
+  mixins: [formItemMixin, optionsMixin]
 };
 </script>
